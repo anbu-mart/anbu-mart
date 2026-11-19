@@ -29,7 +29,7 @@ HOW TO ADD YOUR PRODUCTS
 5. Use a unique id for every product and enter price as a number (without ₹).
 
 HOW TO USE YOUR REAL ANBU CRAFTS LOGO
-Replace assets/logo.svg with your logo artwork. For a PNG logo, save it as assets/logo.png and update the logo image path in index.html. Keep a square image for the app icon; icon.svg can also be replaced with a square logo icon.
+The supplied Anbu Mart logo is installed as assets/logo.webp and the Android install icon is assets/icon.png. To change it later, replace these files with your artwork using the same filenames.
 
 PUBLISH FREE USING GITHUB PAGES
 1. Create/sign in to a GitHub account.
