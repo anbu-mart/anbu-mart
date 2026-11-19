@@ -1,4 +1,4 @@
-const CACHE="anbu-mart-v2";
+const CACHE="anbu-mart-v3";
 const FILES=["./","./index.html","./styles.css","./products.js","./app.js","./manifest.webmanifest","./assets/logo.webp","./assets/icon.png"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
