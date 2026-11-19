@@ -1,0 +1,10 @@
+// Edit this file to add your real products. Prices are in Indian Rupees (INR).
+// For each product, use a unique id. image can be a relative path such as "assets/pop-kit.jpg".
+window.PRODUCTS = [
+  {id:"pop-space",name:"Space POP DIY Kit",category:"POP DIY Kits",price:79,description:"Space-themed moulds with paints and a brush.",image:"",emoji:"🚀"},
+  {id:"pop-sea",name:"Sea Animals POP DIY Kit",category:"POP DIY Kits",price:79,description:"Creative sea-animal moulds for a fun painting activity.",image:"",emoji:"🐙"},
+  {id:"keychain",name:"Customized 3D Keychain",category:"3D Printed Gifts",price:60,description:"A personalized little gift. Final price depends on customization.",image:"",emoji:"🔑"},
+  {id:"ornament",name:"Personalized Christmas Hanging",category:"Customized Gifts",price:80,description:"Add a name to a special festive decoration.",image:"",emoji:"🎄"},
+  {id:"activity",name:"Kids Creative Activity Kit",category:"Kids Activity Kits",price:99,description:"A hands-on creative activity for children.",image:"",emoji:"🎨"},
+  {id:"nameplate",name:"Custom 3D Name Plate",category:"3D Printed Gifts",price:150,description:"A customized name plate. Contact us for size options.",image:"",emoji:"✨"}
+];

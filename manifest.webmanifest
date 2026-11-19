@@ -1,0 +1,18 @@
+{
+  "name": "Anbu Mart \u2013 Anbu Crafts",
+  "short_name": "Anbu Mart",
+  "description": "Shop creative kits, 3D printed gifts and customized products.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf3",
+  "theme_color": "#6b3f26",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

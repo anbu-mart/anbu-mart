@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6b3f26">
+  <meta name="description" content="Shop creative DIY kits, 3D printed gifts and customized products at Anbu Mart.">
+  <title>Anbu Mart | Anbu Crafts</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Anbu Mart home">
+      <img src="./assets/logo.svg" alt="Anbu Crafts logo" class="brand-logo">
+      <span><strong>Anbu Mart</strong><small>A Unit of Anbu Crafts</small></span>
+    </a>
+    <button class="cart-button" id="cartToggle" aria-label="Open shopping cart">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CREATE • PLAY • GIFT</p>
+        <h1>Little things.<br><em>Big happiness.</em></h1>
+        <p>Discover creative DIY kits, 3D printed gifts and thoughtful customized products.</p>
+        <a class="primary-link" href="#products">Explore products</a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span>✦</span><b>MAKE<br>IT<br>YOUR<br>OWN</b><i>♥</i></div>
+    </section>
+
+    <section class="section-head" id="products">
+      <div><p class="eyebrow">HANDPICKED FOR YOU</p><h2>Shop our collection</h2></div>
+      <span class="small-note">Prices in ₹ (INR)</span>
+    </section>
+
+    <div class="toolbar">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="All">All categories</option>
+        <option>POP DIY Kits</option>
+        <option>3D Printed Gifts</option>
+        <option>Kids Activity Kits</option>
+        <option>Customized Gifts</option>
+      </select>
+    </div>
+    <section id="productGrid" class="product-grid" aria-live="polite"></section>
+    <p class="demo-note">Sample products are shown to help you preview the app. Replace them with your actual products and prices in <code>products.js</code>.</p>
+  </main>
+
+  <footer>
+    <div class="footer-brand">Anbu Mart <span>by Anbu Crafts</span></div>
+    <p>Questions or bulk orders? Chat with us on WhatsApp.</p>
+    <a href="https://wa.me/918015176236" target="_blank" rel="noopener">WhatsApp: +91 80151 76236</a>
+    <p class="copyright">© <span id="year"></span> Anbu Mart. All rights reserved.</p>
+  </footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your cart</h2></div><button id="closeCart" class="icon-button" aria-label="Close cart">✕</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-bottom">
+      <div class="total-line"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
+      <p class="small-note">Delivery charges, if any, will be confirmed on WhatsApp.</p>
+      <button id="checkoutButton" class="primary-button" disabled>Continue to checkout</button>
+    </div>
+  </aside>
+
+  <dialog id="checkoutDialog">
+    <form id="checkoutForm" method="dialog" class="checkout-form">
+      <div class="drawer-head"><div><p class="eyebrow">ALMOST THERE</p><h2>Delivery details</h2></div><button type="button" id="closeCheckout" class="icon-button" aria-label="Close">✕</button></div>
+      <label>Your name<input name="customerName" required maxlength="70" placeholder="Enter your name"></label>
+      <label>Mobile number<input name="phone" required inputmode="tel" pattern="[0-9 +()-]{8,18}" placeholder="Your contact number"></label>
+      <label>Delivery address<textarea name="address" required rows="3" maxlength="300" placeholder="House no., street, area, city, PIN code"></textarea></label>
+      <label>Additional note (optional)<textarea name="note" rows="2" maxlength="200" placeholder="Any preferences?"></textarea></label>
+      <button class="primary-button" type="submit">Place order on WhatsApp</button>
+      <p class="small-note">Your order details will be sent to Anbu Mart through WhatsApp. The order is not confirmed until we reply.</p>
+    </form>
+  </dialog>
+
+  <script src="./products.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
