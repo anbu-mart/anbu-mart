@@ -1,6 +1,7 @@
 // Edit this file to add your real products. Prices are in Indian Rupees (INR).
 // For each product, use a unique id. image can be a relative path such as "assets/pop-kit.jpg".
 window.PRODUCTS = [
+  {id:"rabbit-fridge-magnet",name:"Rabbits Fridge Magnet DIY Kit",category:"Fridge Magnets",price:30,description:"DIY rabbit fridge magnet kit with two paint colours, a paintbrush and a colouring sheet.",image:"assets/rabbit-fridge-magnet.webp",emoji:"🐰"},
   {id:"pop-space",name:"Space POP DIY Kit",category:"POP DIY Kits",price:79,description:"Space-themed moulds with paints and a brush.",image:"",emoji:"🚀"},
   {id:"pop-sea",name:"Sea Animals POP DIY Kit",category:"POP DIY Kits",price:79,description:"Creative sea-animal moulds for a fun painting activity.",image:"",emoji:"🐙"},
   {id:"keychain",name:"Customized 3D Keychain",category:"3D Printed Gifts",price:60,description:"A personalized little gift. Final price depends on customization.",image:"",emoji:"🔑"},
