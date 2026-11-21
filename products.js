@@ -14,4 +14,10 @@ emoji:"🐰"},
   {id:"ornament",name:"Personalized Christmas Hanging",category:"Customized Gifts",price:80,description:"Add a name to a special festive decoration.",image:"",emoji:"🎄"},
   {id:"activity",name:"Kids Creative Activity Kit",category:"Kids Activity Kits",price:99,description:"A hands-on creative activity for children.",image:"",emoji:"🎨"},
   {id:"nameplate",name:"Custom 3D Name Plate",category:"3D Printed Gifts",price:150,description:"A customized name plate. Contact us for size options.",image:"",emoji:"✨"}
-];
+{id:"fruit-pop",
+name:"Fruit Theme POP DIY Painting Kit",
+category:"POP DIY Kits",
+price:99,
+description:"6 fruit-themed moulds with 6 colour paint pots and a paintbrush.",
+image:"assets/fruit-pop-diy-kit.png",
+emoji:"🍉"},];
